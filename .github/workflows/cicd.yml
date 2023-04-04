@@ -31,5 +31,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: alej0n/apicicd:lastest, alejo0n/apicicd:${{ github.run_number }} #esto averiguar despues
+          tags: |
+                alejo0n/apicicd:latest
+                alejo0n/apicicd:${{ github.sha }}
           
