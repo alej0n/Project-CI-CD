@@ -1,9 +1,5 @@
 name: CI
-on:
-  push:
-    branches:
-      -master
-      -testing
+on: [push]
 
 jobs:
   test:
@@ -15,8 +11,8 @@ jobs:
         uses: tonybaloney/pycharm-security@master
         with:
           path: src/
-
   build:
+    runs-on: ubuntu-latest
     name: Docker Build, Tag & Publish
     steps:
       - name: Build, Tag & Publish Image to DockerHub
