@@ -11,7 +11,7 @@ jobs:
         uses: tonybaloney/pycharm-security@master
         with:
           path: src/
-  docker:
+  build:
     runs-on: ubuntu-latest
     steps:
       -
