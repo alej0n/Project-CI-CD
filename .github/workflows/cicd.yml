@@ -31,5 +31,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: alej0n/apicicd
+          tags: alej0n/apicicd:lastes, alejo0n/apicicd:${{ github.run_number }}
           
